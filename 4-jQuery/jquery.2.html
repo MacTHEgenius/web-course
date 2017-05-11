@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>-->
+        <script type="text/javascript" src="jquery-3.2.1.min.js"></script>
+        <title>AJAX</title>
+        
+        <style type="text/css">
+            
+        </style>
+    </head>
+    
+    <body>
+        <h1>Hello world !</h1>
+        <p id="text"></p>
+        
+        <script type="text/javascript">
+        
+            // $.ajax("file.txt").done(function (data) {
+            //     console.log(data);
+            //     $("#text").html(data);
+            // }).fail(function (err) {
+            //     console.log(err);
+            // });
+            
+            var regex = /e/g;
+            var str = "Regex is great!";
+            var result = str.match(regex);
+            console.log(result);
+            
+        </script>
+    </body>
+</html>

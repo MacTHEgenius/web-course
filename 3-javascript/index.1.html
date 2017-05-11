@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Javascript</title>
+    </head>
+    
+    <body>
+        <input id="field" type="text"/>
+        <button id="button">Chage text</button>
+        <p id="text">This is text</p>
+        
+        <script type="text/javascript">
+        
+            var button = document.getElementById("button");
+            var field = document.getElementById("field");
+            var label = document.getElementById("text");
+            
+            button.onclick = function () {
+                label.innerHTML = field.value;
+            };
+        
+        </script>
+    </body>
+</html>

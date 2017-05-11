@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>-->
+        <script type="text/javascript" src="jquery-3.2.1.min.js"></script>
+        <title>jQuery</title>
+        
+        <style type="text/css">
+            
+            #circle {
+                width: 150px;
+                height: 150px;
+                border-radius: 50%;
+                background-color: green;
+                margin: 10px;
+            }
+            
+            .square {
+                width: 150px;
+                height: 150px;
+                background-color: red;
+                margin: 10px;
+            }
+            
+        </style>
+    </head>
+    
+    <body>
+        <h1>Hello world !</h1>
+        
+        <div id="circle"></div>
+        <!--<div class="square"></div>-->
+        <!--<div class="square"></div>-->
+        
+        <!--<p id="text">This is some text</p>-->
+        <!--<button id="toggle">Toggle text</button>-->
+        
+        <script type="text/javascript">
+            
+            var circle = $("#circle");
+            circle.click(function () {
+                $(this).animate({
+                    width: "400px", 
+                    height: "400px",
+                    marginLeft: "100px",
+                    marginTop: "100px"
+                }, 2000, function () {
+                    $(this).css("background-color", "red");
+                });
+            });
+            
+            // var button = $("#toggle");
+            // var text = $("#text");
+            // button.click(function () {
+            //     if (text.css("display") == "none") {
+            //         text.fadeIn();
+            //     } else {
+            //         text.fadeOut();
+            //     }
+            // });
+            
+        </script>
+    </body>
+</html>

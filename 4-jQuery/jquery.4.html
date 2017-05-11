@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>-->
+        <script type="text/javascript" src="jquery-3.2.1.min.js"></script>
+        <script src="jquery-ui.js"></script>
+        <link href="jquery-ui.css" rel="stylesheet">
+        <title>Validation</title>
+            
+        <style type="text/css">
+            body {
+                font-family: helvetica;
+                font-weight: bold;
+            }
+        
+            #text {
+                text-align: center;
+                margin-top: 65px;
+                color: white;
+            }
+        
+            #draggable { 
+                width: 50px;
+                height: 50px;
+                background-color: red;
+            }
+            
+            #droppable {
+                width: 300px;
+                height: 300px;
+                background-color: grey;
+            }
+        </style>
+    </head>
+    
+    <body style="height: 400px;">
+        
+        <ul id="sortable">
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+            <li>Item 4</li>
+            <li>Item 5</li>
+            <li>Item 6</li>
+            <li>Item 7</li>
+            <li>Item 8</li>
+            <li>Item 9</li>
+            <li>Item 10</li>
+            <li>Item 11</li>
+            <li>Item 12</li>
+        </ul>
+        
+        <script type="text/javascript">
+        
+            $("#sortable").sortable();
+            $("#sortable").disableSelection();
+        
+        </script>
+    </body>
+</html>
